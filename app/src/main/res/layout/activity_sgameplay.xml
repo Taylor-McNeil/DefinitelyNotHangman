@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/MasterLayout"
+    android:background="@drawable/tiew_93my_170503"
+    tools:context=".SGameplay">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="305dp"
+        android:layout_height="269dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847"
+        app:srcCompat="@drawable/m2" />
+
+       <LinearLayout
+        android:id="@+id/GameUI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+           <TextView
+               android:id="@+id/InsertLetter"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="10dp"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:text="@string/InsertLetter"
+               android:textStyle="bold"
+               android:textColor="#FFFFFF"
+               android:textSize="25sp" />
+
+           <EditText
+               android:id="@+id/Letter"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_weight="1"
+               android:digits="abcdefghijklmnopqrstuvwxzyABCDEFGHIJKLMNOPQRSTUVWXZY"
+               android:gravity="center"
+               android:inputType="text"
+               android:textSize="15sp"
+               android:maxLength="1"
+               android:textStyle="bold"
+               android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/Enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Enter"
+            android:onClick="readLetter"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/IncorrectView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="117dp"
+        android:fontFamily="@font/driftwoodsolid"
+        android:text="@string/InvalidLetters"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/Letters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/GameUI"></LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

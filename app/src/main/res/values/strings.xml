@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">DefinitelyNotHangman</string>
+    <string name="title">Definitely Not Hangman</string>
+    <string name="SinglePlayer">Single Player</string>
+    <string name="MultiPlayer"> Multiplayer</string>
+    <string name="Credits"> Credits</string>
+    <string name="InsertLetter"> Insert Letter</string>
+    <string name="Enter"> Enter</string>
+    <string name="Underscore">_</string>
+    <string name="PlayAgain">Play Again</string>
+    <string name="GameOver">GAME OVER</string>
+    <string name="MainMenu">Main Menu</string>
+    <string name="InvalidLetters">Invalid Letters </string>
+    <string name="CreateServer">Create a Game</string>
+    <string name="JoinServer">Join a Game</string>
+    <string name="StartGame">Start Game</string>
+    <string name="CreditsDetails"> Graphics by: "https://www.vecteezy.com" www.vecteezy.com</string>
+    <string name="Instructions">Please enter a word. We are going to build the hangman dictionary together. Every time you play, we are going to add more words.</string>
+    <string name="Tip">You only get four chances, so I would not suggest long words :)</string>
+    <string name="Dictionary">Here is your list so far:</string>
+    <string name="Win">YOU WON!</string>
+    <string name="Blurb"> A huge thank you to all the artists and software developers that made this app possible. This was the first game, I ever created.</string>
+    <string name="Music">Music: https://zitronsound.bandcamp.com/track/wild-west https://www.youtube.com/watch?v=iLmTMn_eYd8 </string>
+    <string name="Art">Art: https://www.vecteezy.com">Vecteezy.com</string>
+    <string name="Font">Fonts: https://www.dafont.com/drift-type.font https://www.dafont.com/kindergarten4.font</string>
+
+</resources>
