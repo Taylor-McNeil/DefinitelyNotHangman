@@ -25,6 +25,11 @@ public class Words extends AppCompatActivity {
         textView.setText(previous+"\n");
     }
 
+    /**
+     *  This function is grabbing the word entered by the user and writing it to a file.
+     * @param v
+     * @throws IOException
+     */
     public void write2File(View v) throws IOException {
         EditText EditWord = (EditText)findViewById(R.id.Word_Layout);
         String Word = EditWord.getText().toString();
@@ -35,7 +40,7 @@ public class Words extends AppCompatActivity {
         }
 
         BufferedWriter writer = new BufferedWriter(new FileWriter(new
-                File(getFilesDir()+File.separator+"wordsv9.txt"),true));
+                File(getFilesDir()+File.separator+"wordsv8.txt"),true));
                 String upperWord=Word.toUpperCase();
                 writer.append(upperWord+" ");
                 writer.close();
@@ -45,6 +50,10 @@ public class Words extends AppCompatActivity {
         EditWord.setText("");
     }
 
+    /**
+     * This function is taking thw word the user entered and displaying it on the screen
+     * @param Word- a string the user will enter
+     */
     public void displayWords(String Word){
         TextView textView = findViewById(R.id.Dictionary);
         String previous = textView.getText().toString();
@@ -56,10 +65,10 @@ public class Words extends AppCompatActivity {
         startActivity(StartGame);
     }
 
-    protected void onPause(){
+    /*protected void onPause(){
         super.onPause();
         MainActivity.titlesong.release();
-    }
+    }*/
 
 
 }

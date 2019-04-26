@@ -32,7 +32,7 @@ public class SGameplay extends AppCompatActivity {
     LinearLayout ParentLayout;
     int numberOfIncorrectGuesses=0;
     int numberofCorrectGuesses=0;
-    protected static MediaPlayer gamesong;
+    //rotected static MediaPlayer gamesong;
 
 
     @Override
@@ -40,8 +40,8 @@ public class SGameplay extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sgameplay);
         ParentLayout = findViewById(R.id.Letters);
-        gamesong =MediaPlayer.create(SGameplay.this,R.raw.horsestowater);
-        gamesong.start();
+        //gamesong =MediaPlayer.create(SGameplay.this,R.raw.horsestowater);
+        //gamesong.start();
 
         try{
             wordPicker();
@@ -57,7 +57,7 @@ public class SGameplay extends AppCompatActivity {
 
     public void wordPicker() throws FileNotFoundException  {
         BufferedReader reader = new BufferedReader(new FileReader(new
-                File(getFilesDir()+File.separator+"wordsv9.txt")));
+                File(getFilesDir()+File.separator+"wordsv8.txt")));
         String read;
         StringBuilder sb = new StringBuilder();
 
